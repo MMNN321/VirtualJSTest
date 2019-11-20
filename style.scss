@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css?family=Amatic+SC&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Economica:400,700&display=swap');
+
+$panelWidth: 17%;
+
+::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+    background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #060507;
+}
+
+html > {
+    body > {
+        background: #111012;
+
+        header {
+            min-width: 250px;
+            width: $panelWidth;
+            height: 100vh;
+            overflow: hidden;
+            position: absolute;
+            left: 0;
+            top: 0;
+            background: darken(#111012, 3%);
+            box-shadow: 0 2px 5px 3px rgba(0,0,0,.4);
+            border-right: 1px solid #060507;
+
+            #title {
+                width: 75%;
+                margin: auto;
+
+                .text {
+                    font-family: 'Amatic SC';
+                    color: #4FBE96;
+                    text-align: center;
+                    margin: 20px auto 60px auto;
+                    font-size: 30px;
+                    text-shadow: 1px 1px 3px 2px rgba(0,0,0,.5);
+                }
+            }
+
+            #selection {
+                .button {
+                    $height: 7vh;
+                    width: 100%;
+                    height: $height;
+                    background: darken(#111012, 3%);
+                    // border-top: 1px solid lighten(#060507, 2%);
+                    cursor: pointer;
+                    -webkit-user-select: none;
+                    transition: ease .3s background;
+
+                    // &:last-child {
+                    //     border-bottom: 1px solid lighten(#060507, 2%);
+                    // }
+
+                    &:hover {
+                        background: darken(#0E0D0F, .5%);
+                    }
+
+                    &:hover .text {
+                        color: darken(#4FBE96, 5%);
+                    }
+                    
+                    .text {
+                        line-height: $height;
+                        margin: 0;
+                        text-align: center;
+                        font-family: 'Economica';
+                        letter-spacing: .5px;
+                        color: #B0B0B0;
+                        transition: color .2s ease;
+                        text-transform: uppercase;
+                        pointer-events: none;
+                    }
+                }
+            }
+
+            #follow {
+                margin: 30px 0;
+                display: flex;
+                flex-wrap: nowrap;
+                justify-content: center;
+                justify-items: center;
+
+                a {
+                    font-size: 17px;
+                    color: #B0B0B0;
+                    text-decoration: none;
+                    margin: 0 8px;
+                    border-radius: 50%;
+                    background: darken(#111012, 4%);
+                    padding: 7px;
+                    text-align: center;
+                    display: inline-block;
+                    width: 17px;
+                    height: 17px;
+                    transition: .5s ease color;
+
+                    &:hover {
+                        color: #4FBE96;
+                    }
+                }
+            }
+
+            #subhead {
+                background-size: cover;
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                width: 100%;
+                height: 8vh;
+            }
+        }
+
+        main {
+            width: 100% - $panelWidth;
+            height: 100vh;
+            position: absolute;
+            left: $panelWidth;
+            top: 0;
+            background: url(background2.jpg) no-repeat;
+            background-size: cover;
+            z-index: -1;
+        }
+
+        #madeby {
+            position: fixed;
+            bottom: 0;
+            right: 0;
+            background: #111012;
+            border-left: 1px solid #060507;
+            border-top: 1px solid #060507;
+            padding: 5px 30px;
+            color: #B0B0B0;
+            margin: 0;
+            font-family: 'Economica';
+            border-top-left-radius: 3px;
+
+            a {
+                color: #4FBE96;
+            }
+
+            .click__license {
+                text-decoration: underline;
+                color: #4FBE96;
+                cursor: pointer;
+            }
+        }
+    }
+}

@@ -1,0 +1,65 @@
+#popup .popup-license {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  background: #09090a;
+  padding: 10px 30px;
+  border: 1px solid #060507;
+  -webkit-box-shadow: 2px 2px 5px 4px rgba(0, 0, 0, 0.4);
+          box-shadow: 2px 2px 5px 4px rgba(0, 0, 0, 0.4);
+  -webkit-animation: .5s ease forwards 1 loadin;
+          animation: .5s ease forwards 1 loadin;
+  border-radius: 2px;
+}
+
+#popup .popup-license .close {
+  position: absolute;
+  background: #ff9e70;
+  top: 15px;
+  right: 15px;
+  border-radius: 50%;
+  width: 10px;
+  height: 10px;
+  z-index: 10;
+  cursor: pointer;
+}
+
+#popup .popup-license .title {
+  text-align: center;
+  color: #4FBE96;
+  font-family: "Economica";
+}
+
+#popup .popup-license .content {
+  color: #B0B0B0;
+  font-family: "Economica";
+}
+
+#popup .popup-license .content a {
+  color: #4FBE96;
+}
+
+@-webkit-keyframes loadin {
+  0% {
+    -webkit-transform: translate(500%, -50%);
+            transform: translate(500%, -50%);
+  }
+  100% {
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+  }
+}
+
+@keyframes loadin {
+  0% {
+    -webkit-transform: translate(500%, -50%);
+            transform: translate(500%, -50%);
+  }
+  100% {
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+  }
+}
+/*# sourceMappingURL=style.css.map */
