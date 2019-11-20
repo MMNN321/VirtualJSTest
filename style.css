@@ -10,11 +10,13 @@
   background: #060507;
 }
 
-html > body > {
-  background: #111012;
+html > body {
+  background: #070607;
+  width: 100%;
+  height: 100%;
 }
 
-html > body > header {
+html > body header {
   min-width: 250px;
   width: 17%;
   height: 100vh;
@@ -28,12 +30,12 @@ html > body > header {
   border-right: 1px solid #060507;
 }
 
-html > body > header #title {
+html > body header #title {
   width: 75%;
   margin: auto;
 }
 
-html > body > header #title .text {
+html > body header #title .text {
   font-family: 'Amatic SC';
   color: #4FBE96;
   text-align: center;
@@ -42,7 +44,7 @@ html > body > header #title .text {
   text-shadow: 1px 1px 3px 2px rgba(0, 0, 0, 0.5);
 }
 
-html > body > header #selection .button {
+html > body header #selection .button {
   width: 100%;
   height: 7vh;
   background: #09090a;
@@ -52,15 +54,15 @@ html > body > header #selection .button {
   transition: ease .3s background;
 }
 
-html > body > header #selection .button:hover {
+html > body header #selection .button:hover {
   background: #0d0c0e;
 }
 
-html > body > header #selection .button:hover .text {
+html > body header #selection .button:hover .text {
   color: #42b289;
 }
 
-html > body > header #selection .button .text {
+html > body header #selection .button .text {
   line-height: 7vh;
   margin: 0;
   text-align: center;
@@ -73,7 +75,7 @@ html > body > header #selection .button .text {
   pointer-events: none;
 }
 
-html > body > header #follow {
+html > body header #follow {
   margin: 30px 0;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -86,7 +88,7 @@ html > body > header #follow {
   justify-items: center;
 }
 
-html > body > header #follow a {
+html > body header #follow a {
   font-size: 17px;
   color: #B0B0B0;
   text-decoration: none;
@@ -102,11 +104,11 @@ html > body > header #follow a {
   transition: .5s ease color;
 }
 
-html > body > header #follow a:hover {
+html > body header #follow a:hover {
   color: #4FBE96;
 }
 
-html > body > header #subhead {
+html > body header #subhead {
   background-size: cover;
   position: absolute;
   bottom: 0;
@@ -115,7 +117,7 @@ html > body > header #subhead {
   height: 8vh;
 }
 
-html > body > main {
+html > body main {
   width: 83%;
   height: 100vh;
   position: absolute;
@@ -126,7 +128,7 @@ html > body > main {
   z-index: -1;
 }
 
-html > body > #madeby {
+html > body #madeby {
   position: fixed;
   bottom: 0;
   right: 0;
@@ -140,11 +142,11 @@ html > body > #madeby {
   border-top-left-radius: 3px;
 }
 
-html > body > #madeby a {
+html > body #madeby a {
   color: #4FBE96;
 }
 
-html > body > #madeby .click__license {
+html > body #madeby .click__license {
   text-decoration: underline;
   color: #4FBE96;
   cursor: pointer;

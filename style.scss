@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css?family=Economica:400,700&display=swap');
 
 $panelWidth: 17%;
+$baseColor: #111012;
 
 ::-webkit-scrollbar {
     width: 5px;
@@ -14,8 +15,10 @@ $panelWidth: 17%;
 }
 
 html > {
-    body > {
-        background: #111012;
+    body {
+        background: darken(#111012, 4%);
+        width: 100%;
+        height: 100%;
 
         header {
             min-width: 250px;
@@ -25,7 +28,7 @@ html > {
             position: absolute;
             left: 0;
             top: 0;
-            background: darken(#111012, 3%);
+            background: darken($baseColor, 3%);
             box-shadow: 0 2px 5px 3px rgba(0,0,0,.4);
             border-right: 1px solid #060507;
 
@@ -48,7 +51,7 @@ html > {
                     $height: 7vh;
                     width: 100%;
                     height: $height;
-                    background: darken(#111012, 3%);
+                    background: darken($baseColor, 3%);
                     // border-top: 1px solid lighten(#060507, 2%);
                     cursor: pointer;
                     -webkit-user-select: none;
@@ -93,7 +96,7 @@ html > {
                     text-decoration: none;
                     margin: 0 8px;
                     border-radius: 50%;
-                    background: darken(#111012, 4%);
+                    background: darken($baseColor, 4%);
                     padding: 7px;
                     text-align: center;
                     display: inline-block;
