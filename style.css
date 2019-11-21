@@ -117,6 +117,18 @@ html > body header #subhead {
   height: 8vh;
 }
 
+html > body header #subhead .get-virtual {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  font-family: 'Economica';
+  color: #4FBE96;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
 html > body main {
   width: 83%;
   height: 100vh;
